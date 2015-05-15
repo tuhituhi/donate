@@ -1,0 +1,51 @@
+<html>
+    <head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+    <style>
+        body .ui-page{
+            background:#fff !important;
+        }
+    </style>
+    <script src="phonegap.js"></script>
+    
+    </head>
+<body>
+<table width='100%' height="100%">
+
+<tr>
+<td valign="middle" height="100%">
+    <div style="margin-top:10px;padding:10px;">
+    <p>Dear Friends,</p>
+    <p style="margin-left:30px;">We hope you like and enjoy the new updated version of the App.
+    Your donation will contribute towards the on-going cost of new recordings and further development.<br/><br/>
+    As always, we will endeavour to keep updating and sharing more.
+    For a fulfilling life and much more to come .... Tuhi Tuhi ...
+    </p>
+    
+    </div>
+ <form target="_blank" onsubmit="return loader();" class="paypal-button" action="https://www.paypal.com/cgi-bin/webscr" method="post"><div id="errorBox" class="hide"></div><input value="donate" name="button" type="hidden"><input value="_donations" name="cmd" type="hidden"><input value="veermanpreet@gmail.com" name="business" type="hidden"><input value="JavaScriptButton_donate" name="bn" type="hidden"><input value="www" name="env" type="hidden"><input type="image" src="paypal_donate_button.png" border="0" name="submit" style="width:100%" alt="Make payments with PayPal - it's fast, free and secure!">
+                            </form>
+</td>
+</tr>
+
+</table>
+                            
+                           
+<script type="text/javascript">
+    function loader() {
+        //alert('loading');
+        $.mobile.loading( "show", {
+                         text: "Loading...",
+                         textVisible: true,
+                         theme: "b",
+                         html: ""
+                         });
+                         return true;
+    }
+</script>
+</body>
+</html>
